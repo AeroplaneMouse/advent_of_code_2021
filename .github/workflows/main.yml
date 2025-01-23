@@ -42,5 +42,5 @@ jobs:
         shell: powershell
         run: |
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"AeroplaneMouse_advent_of_code_2021_26c0236a-37dc-4f4c-a229-ae246a098a99" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}"
-          dotnet build
+          dotnet build "Advent Of Code 2021\Advent Of Code 2021.sln"
           .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
